@@ -50,7 +50,7 @@
             "hash": "dbfce9db9deaa2567f6a84fde55f9680",
             "overwrite": false,
             "size": 2304,
-            "url": "https://archive.org/download/MiSTer_BIOS_DB_Pack/BIOS.zip/GAMEBOY/GBC_boot_ROM.gb"
+            "url": "https://archive.org/download/MiSTer_BIOS_DB_Pack/BIOS.zip/Gameboy/GBC_boot_ROM.gb"
         },
         "games/GBA/boot.rom": {
             "hash": "a860e8c0b6d573d191e4ec7db1b1e4f6",
