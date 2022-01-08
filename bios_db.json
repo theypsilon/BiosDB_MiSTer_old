@@ -148,6 +148,12 @@
             "size": 8192,
             "url": "https://archive.org/download/MiSTer_BIOS_DB_Pack/BIOS.zip/NES/fds-bios.rom"
         },
+        "games/PC8801/boot.rom": {
+            "hash": "f1ce4d5f83717093982e5f75516b8f3c",
+            "overwrite": false,
+            "size": 393216,
+            "url": "https://archive.org/download/mister-console-bios-pack_theypsilon/PC88.zip/PC8801 MKII SR BIOS.rom"
+        },
         "games/PlayStation/boot.rom": {
             "hash": "924e392ed05558ffdb115408c263dccf",
             "overwrite": false,
@@ -191,11 +197,12 @@
         "games/MegaCD": {},
         "games/NEOGEO": {},
         "games/NES": {},
+        "games/PC8801": {},
         "games/PlayStation": {},
         "games/SNES": {},
         "games/TGFX16-CD": {},
         "games/WonderSwan": {}
     },
-    "timestamp": 1640304773,
+    "timestamp": 1641603873,
     "zips": {}
 }
