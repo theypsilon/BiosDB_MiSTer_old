@@ -1,0 +1,186 @@
+{
+    "AO486": {
+        "boot0.rom": {
+            "file": "boot0.rom",
+            "hash": "befe3a7d8ac75dacf9a39750ad719e4d",
+            "size": 65536
+        },
+        "boot1.rom": {
+            "file": "boot1.rom",
+            "hash": "4167d7806d036df1ec3aaea836f5c5df",
+            "size": 32768
+        }
+    },
+    "Astrocade": {
+        "boot.rom": {
+            "file": "Bally Professional Arcade, Astrocade '3159' BIOS (1978)(Bally Mfg. Corp.).bin",
+            "hash": "7d25a26e5c4841b364cfe6b1735eaf03",
+            "size": 8192
+        }
+    },
+    "AtariLynx": {
+        "boot.rom": {
+            "file": "boot.rom",
+            "hash": "fcd403db69f54290b51035d82f835e7b",
+            "size": 512
+        }
+    },
+    "CoCo3": {
+        "boot0.rom": {
+            "file": "boot0.rom",
+            "hash": "7233c6c429f3ce1c7392f28a933e0b6f",
+            "size": 32768
+        },
+        "boot1.rom": {
+            "file": "boot1.rom",
+            "hash": "8cab28f4b7311b8df63c07bb3b59bfd5",
+            "size": 8192
+        },
+        "boot2.rom": {
+            "file": "boot2.rom",
+            "hash": "171fb7a5d3b808565295b45c773abaaf",
+            "size": 8192
+        }
+    },
+    "GAMEBOY": {
+        "boot1.rom": {
+            "file": "GBC_boot_ROM.gb",
+            "hash": "dbfce9db9deaa2567f6a84fde55f9680",
+            "size": 2304
+        },
+        "zip": "Gameboy"
+    },
+    "GBA": {
+        "boot.rom": {
+            "file": "gba_bios.bin",
+            "hash": "a860e8c0b6d573d191e4ec7db1b1e4f6",
+            "size": 16384
+        }
+    },
+    "Intellivision": {
+        "boot0.rom": {
+            "file": "Executive ROM, The (1978)(Mattel).bin",
+            "hash": "62e761035cb657903761800f4437b8af",
+            "size": 8192
+        },
+        "boot1.rom": {
+            "file": "GROM, The (1978)(General Instruments).bin",
+            "hash": "0cd5946c6473e42e8e4c2137785e427f",
+            "size": 2048
+        },
+        "boot2.rom": {
+            "file": "IntelliVoice BIOS (1981)(Mattel).bin",
+            "hash": "d5530f74681ec6e0f282dab42e6b1c5f",
+            "size": 2048
+        },
+        "boot3.rom": {
+            "file": "Entertainment Computer System's EXEC-BASIC ROM, The (1978)(Mattel).bin",
+            "hash": "2e72a9a2b897d330a35c8b07a6146c52",
+            "size": 24576
+        }
+    },
+    "Interact": {
+        "boot.rom": {
+            "file": "Interact_ROM.bin",
+            "hash": "aa9fb0e9697a009dfb9d876351dd8f48",
+            "size": 2048
+        }
+    },
+    "MegaCD": {
+        "Europe/cd_bios.rom": {
+            "file": "US Sega CD 2 (Region Free) 930601 l_oliveira.bin",
+            "hash": "14db9657bbaa6fbb9249752424dc0ce4",
+            "size": 131072
+        },
+        "Japan/cd_bios.rom": {
+            "file": "US Sega CD 2 (Region Free) 930601 l_oliveira.bin",
+            "hash": "14db9657bbaa6fbb9249752424dc0ce4",
+            "size": 131072
+        },
+        "USA/cd_bios.rom": {
+            "file": "US Sega CD 2 (Region Free) 930601 l_oliveira.bin",
+            "hash": "14db9657bbaa6fbb9249752424dc0ce4",
+            "size": 131072
+        },
+        "boot.rom": {
+            "file": "US Sega CD 2 (Region Free) 930601 l_oliveira.bin",
+            "hash": "14db9657bbaa6fbb9249752424dc0ce4",
+            "size": 131072
+        }
+    },
+    "NEOGEO": {
+        "000-lo.lo": {
+            "file": "000-lo.lo",
+            "hash": "fc7599f3f871578fe9a0453662d1c966",
+            "size": 131072
+        },
+        "neo-epo.sp1": {
+            "file": "neo-epo.sp1-AES_BIOS",
+            "hash": "b11751ad42879c461d64ad2b7b2b0129",
+            "size": 131072
+        },
+        "sfix.sfix": {
+            "file": "sfix.sfix",
+            "hash": "aa2b5d0eae4158ffc0d7d63481c7830b",
+            "size": 131072
+        },
+        "sp-s2.sp1": {
+            "file": "sp-s2.sp1-MVS_BIOS",
+            "hash": "2968f59f44bf328639aa79391aeeeab4",
+            "size": 131072
+        },
+        "uni-bios.rom": {
+            "file": "uni-bios.rom",
+            "hash": "4f0aeda8d2d145f596826b62d563c4ef",
+            "size": 131072
+        }
+    },
+    "NES": {
+        "boot0.rom": {
+            "file": "fds-bios.rom",
+            "hash": "ca30b50f880eb660a320674ed365ef7a",
+            "size": 8192
+        }
+    },
+    "PC8801": {
+        "boot.rom": {
+            "file": "PC8801 MKII SR BIOS.rom",
+            "hash": "f1ce4d5f83717093982e5f75516b8f3c",
+            "size": 393216
+        },
+        "zip": "PC88"
+    },
+    "PlayStation": {
+        "boot.rom": {
+            "file": "SCPH1001.BIN",
+            "hash": "924e392ed05558ffdb115408c263dccf",
+            "size": 524288
+        }
+    },
+    "SNES": {
+        "bsx_bios.rom": {
+            "file": "BS-X BIOS (English) [No DRM] [2016 v1.3].sfc",
+            "hash": "96cf17bf589fcbfa6f8de2dc84f19fa2",
+            "size": 1048576
+        }
+    },
+    "TGFX16-CD": {
+        "cd_bios.rom": {
+            "file": "Super CD 3.1.pce",
+            "hash": "98d43a097a165b03df170fd5c2ad2c2f",
+            "size": 262144
+        }
+    },
+    "WonderSwan": {
+        "boot.rom": {
+            "file": "boot.rom",
+            "hash": "54b915694731cc22e07d3fb8a00ee2db",
+            "size": 4096
+        },
+        "boot1.rom": {
+            "file": "boot1.rom",
+            "hash": "880893bd5a7d53fff826bd76a83d566e",
+            "size": 8192
+        }
+    }
+}
