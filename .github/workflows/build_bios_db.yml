@@ -19,6 +19,7 @@ jobs:
         git config --global user.name "The CI/CD Bot"
         ./build_db.py
         git checkout --orphan db
+        git reset
         git add bios_db.json
         git commit -m "-" || true
         git push --force origin db
