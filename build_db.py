@@ -29,7 +29,9 @@ def main():
         "db_id": 'bios_db',
         "db_files": [],
         "files": {},
-        "folders": {},
+        "folders": {
+            "games": {}
+        },
         "zips": {},
         "base_files_url": "",
         "default_options": {},
