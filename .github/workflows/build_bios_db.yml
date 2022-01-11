@@ -18,6 +18,7 @@ jobs:
         git config --global user.email "theypsilon@gmail.com"
         git config --global user.name "The CI/CD Bot"
         ./build_db.py
+        git checkout --orphan db
         git add bios_db.json
         git commit -m "-" || true
-        git push origin main
+        git push --force origin db
