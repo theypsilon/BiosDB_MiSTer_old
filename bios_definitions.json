@@ -1,4 +1,16 @@
 {
+    "AO486": {
+        "boot0.rom": {
+            "file": "boot0.rom",
+            "hash": "befe3a7d8ac75dacf9a39750ad719e4d",
+            "size": 65536
+        },
+        "boot1.rom": {
+            "file": "boot1.rom",
+            "hash": "4167d7806d036df1ec3aaea836f5c5df",
+            "size": 32768
+        }
+    },
     "Astrocade": {
         "boot.rom": {
             "file": "Bally Professional Arcade, Astrocade '3159' BIOS (1978)(Bally Mfg. Corp.).bin",
