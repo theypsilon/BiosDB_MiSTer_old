@@ -155,8 +155,7 @@
             "file": "SCPH1001.BIN",
             "hash": "924e392ed05558ffdb115408c263dccf",
             "size": 524288
-        },
-        "zip": "PlayStation"
+        }
     },
     "SNES": {
         "bsx_bios.rom": {
@@ -167,10 +166,11 @@
     },
     "TGFX16-CD": {
         "cd_bios.rom": {
-            "file": "Super CD 3.1.pce",
+            "file": "TurboGrafx16/Super CD 3.1.pce",
             "hash": "98d43a097a165b03df170fd5c2ad2c2f",
             "size": 262144
-        }
+        },
+        "zip": "TurboGrafx16"
     },
     "WonderSwan": {
         "boot.rom": {
