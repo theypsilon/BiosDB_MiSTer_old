@@ -150,7 +150,7 @@
         },
         "zip": "PC88"
     },
-    "PlayStation": {
+    "PSX": {
         "boot.rom": {
             "file": "SCPH1001.BIN",
             "hash": "924e392ed05558ffdb115408c263dccf",
