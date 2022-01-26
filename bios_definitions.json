@@ -155,7 +155,8 @@
             "file": "SCPH1001.BIN",
             "hash": "924e392ed05558ffdb115408c263dccf",
             "size": 524288
-        }
+        },
+        "zip": "PlayStation"
     },
     "SNES": {
         "bsx_bios.rom": {
