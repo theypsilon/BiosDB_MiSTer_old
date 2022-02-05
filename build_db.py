@@ -50,7 +50,7 @@ def main():
             db['files'][gamesdir + '/' + mister_rom] = {
                 "hash": description['hash'],
                 "size": description['size'],
-                "url": urllib.parse.quote('%s/%s.zip/%s' % (base_files_url, zip, description['file'])),
+                "url": '%s/%s.zip/%s' % (base_files_url, zip, urllib.parse.quote(description['file'])),
                 "overwrite": False
             }
 
