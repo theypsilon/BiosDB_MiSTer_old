@@ -19,6 +19,7 @@
 
 import json
 import time
+import urllib.parse
 
 def main():
     print('START!')
@@ -49,7 +50,7 @@ def main():
             db['files'][gamesdir + '/' + mister_rom] = {
                 "hash": description['hash'],
                 "size": description['size'],
-                "url": '%s/%s.zip/%s' % (base_files_url, zip, description['file']),
+                "url": urllib.parse.quote('%s/%s.zip/%s' % (base_files_url, zip, description['file'])),
                 "overwrite": False
             }
 
