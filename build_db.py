@@ -53,6 +53,8 @@ def main():
                 "url": '%s/%s.zip/%s' % (base_files_url, zip, urllib.parse.quote(description['file'])),
                 "overwrite": False
             }
+            if mister_rom == 'uni-bios.rom' and system == 'NEOGEO':
+                db['files'][gamesdir + '/uni-bios-40.zip'] = uni_bios_description()
 
     save_json(db, "bios_db.json")
 
@@ -64,6 +66,14 @@ def save_json(db, json_name):
 def load_json(path):
     with open(path) as f:
         return json.load(f)
+
+def uni_bios_description():
+    url = 'http://unibios.free.fr/download/uni-bios-40.zip'
+    return {
+        "hash": '1986c39676354d19ae648a914bd914f7',
+        "size": 101498,
+        "url": url
+    }
 
 if __name__ == "__main__":
     main()
