@@ -141,9 +141,24 @@
     },
     "PSX": {
         "boot.rom": {
-            "file": "SCPH1001.BIN",
-            "hash": "924e392ed05558ffdb115408c263dccf",
+            "file": "SCPH7000.BIN",
+            "hash": "8e4c14f567745eff2f0408c8129f72a6",
             "size": 524288
+        },
+        "boot1.rom": {
+            "file": "SCPH7001.BIN",
+            "hash": "1e68c231d0896b7eadcad1d7d8e76129",
+            "size": 524288
+        },
+        "boot2.rom": {
+            "file": "SCPH7002.BIN",
+            "hash": "b9d9a0286c33dc6b7237bb13cd46fdee",
+            "size": 524288
+        },
+        "sbi.zip": {
+            "file": "sbi.zip",
+            "hash": "706d60ab2dfdbfdd53be2069cb85a1fe",
+            "size": 218953
         }
     },
     "SNES": {
