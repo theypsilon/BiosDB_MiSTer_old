@@ -141,13 +141,13 @@
     },
     "PSX": {
         "boot.rom": {
-            "file": "SCPH7000.BIN",
-            "hash": "8e4c14f567745eff2f0408c8129f72a6",
+            "file": "SCPH7001.BIN",
+            "hash": "1e68c231d0896b7eadcad1d7d8e76129",
             "size": 524288
         },
         "boot1.rom": {
-            "file": "SCPH7001.BIN",
-            "hash": "1e68c231d0896b7eadcad1d7d8e76129",
+            "file": "SCPH7000.BIN",
+            "hash": "8e4c14f567745eff2f0408c8129f72a6",
             "size": 524288
         },
         "boot2.rom": {
