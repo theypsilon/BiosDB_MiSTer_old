@@ -31,7 +31,7 @@ def main():
         "db_files": [],
         "files": {},
         "folders": {
-            "games": {}
+            "|games": {}
         },
         "zips": {},
         "base_files_url": "",
