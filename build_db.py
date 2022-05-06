@@ -40,7 +40,7 @@ def main():
     }
 
     for system, roms in load_json('bios_definitions.json').items():
-        gamesdir = "games/" + system
+        gamesdir = "|games/" + system
         db["folders"][gamesdir] = {}
         zip = system
         if 'zip' in roms:
