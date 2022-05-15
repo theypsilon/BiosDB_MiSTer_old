@@ -28,18 +28,18 @@ def main():
 
     db = {
         "db_id": 'bios_db',
-        "db_files": [],
         "files": {},
         "folders": {
             "|games": {}
         },
-        "zips": {},
-        "base_files_url": "",
-        "default_options": {},
         "timestamp":  int(time.time())
     }
 
     for system, roms in load_json('bios_definitions.json').items():
+        if system == 'zips':
+            db['zips'] = roms
+            continue
+
         gamesdir = "|games/" + system
         db["folders"][gamesdir] = {}
         zip = system

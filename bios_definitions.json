@@ -117,11 +117,6 @@
             "hash": "2968f59f44bf328639aa79391aeeeab4",
             "size": 131072
         },
-        "uni-bios.rom": {
-            "file": "uni-bios.rom",
-            "hash": "4f0aeda8d2d145f596826b62d563c4ef",
-            "size": 131072
-        },
         "zip": "NeoGeo"
     },
     "NES": {
@@ -186,6 +181,31 @@
             "file": "boot1.rom",
             "hash": "880893bd5a7d53fff826bd76a83d566e",
             "size": 8192
+        }
+    },
+    "zips": {
+        "neogeo_unibios": {
+            "kind": "extract_single_files",
+            "description": "Extracting NeoGeo UniBios from http://unibios.free.fr",
+            "internal_summary": {
+                "files": {
+                    "|games/NEOGEO/uni-bios.rom": {
+                        "hash": "4f0aeda8d2d145f596826b62d563c4ef",
+                        "size": 131072,
+                        "zip_id": "neogeo_unibios",
+                        "zip_path": "uni-bios.rom"
+                    }
+                },
+                "folders": {}
+            },
+            "contents_file": {
+                "hash": "1986c39676354d19ae648a914bd914f7",
+                "size": 101498,
+                "url": "http://unibios.free.fr/download/uni-bios-40.zip"
+            },
+            "files_count": 1,
+            "folders_count": 0,
+            "raw_files_size": 131072
         }
     }
 }
