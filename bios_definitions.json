@@ -32,7 +32,7 @@
     },
     "Gamate": {
         "boot.rom": {
-            "file": "gamate_boot.rom",
+            "file": "Gamate/gamate_boot.rom",
             "hash": "ef67993a94503c4b7798b5901c7dda52",
             "size": 4096
         }
