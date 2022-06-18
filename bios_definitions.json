@@ -30,6 +30,13 @@
             "size": 8192
         }
     },
+    "Gamate": {
+        "boot.rom": {
+            "file": "gamate_boot.rom",
+            "hash": "ef67993a94503c4b7798b5901c7dda52",
+            "size": 4096
+        }
+    },
     "GAMEBOY": {
         "boot1.rom": {
             "file": "GBC_boot_ROM.gb",
