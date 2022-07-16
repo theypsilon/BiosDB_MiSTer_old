@@ -163,6 +163,19 @@
             "size": 218953
         }
     },
+    "SGB": {
+        "Super Game Boy.sfc": {
+            "file": "SGB1.sfc",
+            "hash": "b15ddb15721c657d82c5bab6db982ee",
+            "size": 262144
+        },
+        "Super Game Boy 2.sfc": {
+            "file": "SGB2.sfc",
+            "hash": "8ecd73eb4edf7ed7e81aef1be80031d5",
+            "size": 524288
+        },
+        "overwrite": true
+    },
     "SNES": {
         "bsx_bios.rom": {
             "file": "BS-X BIOS (English) [No DRM] [2016 v1.3].sfc",

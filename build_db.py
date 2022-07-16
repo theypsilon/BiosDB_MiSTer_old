@@ -46,13 +46,22 @@ def main():
         if 'zip' in roms:
             zip = roms['zip']
             roms.pop('zip')
+        overwrite = False
+        if 'overwrite' in roms:
+            overwrite = roms['overwrite']
+            roms.pop('overwrite')
+
         for mister_rom, description in roms.items():
-            db['files'][gamesdir + '/' + mister_rom] = {
+            file_descr = {
                 "hash": description['hash'],
                 "size": description['size'],
                 "url": '%s/%s.zip/%s' % (base_files_url, zip, urllib.parse.quote(description['file'])),
                 "overwrite": False
             }
+            if overwrite:
+                file_descr.pop('overwrite')
+
+            db['files'][gamesdir + '/' + mister_rom] = file_descr
             if mister_rom == 'uni-bios.rom' and system == 'NEOGEO':
                 db['files'][gamesdir + '/uni-bios-40.zip'] = uni_bios_description()
 
