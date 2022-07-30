@@ -83,18 +83,18 @@
     },
     "MegaCD": {
         "Europe/cd_bios.rom": {
-            "file": "US Sega CD 2 (Region Free) 930601 l_oliveira.bin",
-            "hash": "14db9657bbaa6fbb9249752424dc0ce4",
+            "file": "[BIOS] Mega-CD 2 (Europe) (v2.00).md",
+            "hash": "9b562ebf2d095bf1dabadbc1881f519a",
             "size": 131072
         },
         "Japan/cd_bios.rom": {
-            "file": "US Sega CD 2 (Region Free) 930601 l_oliveira.bin",
-            "hash": "14db9657bbaa6fbb9249752424dc0ce4",
+            "file": "[BIOS] Mega-CD 2 (Japan) (v2.00C).md",
+            "hash": "683a8a9e273662561172468dfa2858eb",
             "size": 131072
         },
         "USA/cd_bios.rom": {
-            "file": "US Sega CD 2 (Region Free) 930601 l_oliveira.bin",
-            "hash": "14db9657bbaa6fbb9249752424dc0ce4",
+            "file": "[BIOS] Sega CD 2 (USA) (v2.00).md",
+            "hash": "310a9081d2edf2d316ab38813136725e",
             "size": 131072
         },
         "boot.rom": {
