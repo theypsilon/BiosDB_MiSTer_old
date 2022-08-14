@@ -13,6 +13,13 @@
             "size": 512
         }
     },
+    "Casio_PV-2000": {
+        "boot0.rom": {
+            "file": "hn613128pc64.bin",
+            "hash": "558540c5c6f776d88a897f2f3b8fec8f",
+            "size": 16384
+        }
+    },
     "CoCo3": {
         "boot0.rom": {
             "file": "boot0.rom",
@@ -28,6 +35,13 @@
             "file": "boot2.rom",
             "hash": "171fb7a5d3b808565295b45c773abaaf",
             "size": 8192
+        }
+    },
+    "CreatiVision": {
+        "boot.rom": {
+            "file": "CreatiVision_Bootrom_Logo.rom",
+            "hash": "3b1ef759d8e3fb4071582efd33dd05f9",
+            "size": 2048
         }
     },
     "Gamate": {
