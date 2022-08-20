@@ -39,9 +39,9 @@
     },
     "CreatiVision": {
         "boot.rom": {
-            "file": "CreatiVision_Bootrom_Logo.rom",
-            "hash": "3b1ef759d8e3fb4071582efd33dd05f9",
-            "size": 2048
+            "file": "Laser_2001_Bootrom.rom",
+            "hash": "4dfadfb1158f84e2df2b85b13f303986",
+            "size": 16384
         }
     },
     "Gamate": {
