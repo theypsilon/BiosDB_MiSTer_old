@@ -20,7 +20,7 @@
             "size": 16384
         }
     },
-    "CoCo3": {
+    "COCO3": {
         "boot0.rom": {
             "file": "boot0.rom",
             "hash": "7233c6c429f3ce1c7392f28a933e0b6f",
