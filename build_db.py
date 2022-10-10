@@ -110,10 +110,15 @@ def add_tags_to_db(db):
             if file.startswith(folder):
                 db['files'][file]['tags'] = tags
                 
+        for zip_desc in db['zips'].values():
+            for file in zip_desc['internal_summary']['files']:
+                if file.startswith(folder):
+                    zip_desc['internal_summary']['files'][file]['tags'] = tags
+            for zipf in zip_desc['internal_summary']['folders']:
+                if zipf.startswith(folder):
+                    zip_desc['internal_summary']['folders'][zipf]['tags'] = tags
+                    
     db['tag_dictionary'] = tag_dictionary
-    
-    neogeo_tags = db['folders']['|games/NEOGEO']['tags']
-    db['zips']['neogeo_unibios']['internal_summary']['files']['|games/NEOGEO/uni-bios.rom']['tags'] = neogeo_tags
 
 def add_tags_to_dictionary(from_dict, to_dict, tags):
     selected_tag_numbers = set()
