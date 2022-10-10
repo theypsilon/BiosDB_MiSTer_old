@@ -20,6 +20,7 @@
 import json
 import time
 import urllib.parse
+import subprocess
 
 def main():
     print('START!')
@@ -65,6 +66,7 @@ def main():
             if mister_rom == 'uni-bios.rom' and system == 'NEOGEO':
                 db['files'][gamesdir + '/uni-bios-40.zip'] = uni_bios_description()
 
+    add_tags_to_db(db)
     save_json(db, "bios_db.json")
 
 def save_json(db, json_name):
@@ -83,6 +85,78 @@ def uni_bios_description():
         "size": 101498,
         "url": url
     }
+
+def add_tags_to_db(db):
+    dmdb = get_distribution_mister_db()
+    
+    tag_dictionary = {}
+    
+    for folder in db['folders']:
+        if folder not in dmdb['folders']:
+            print(f"Folder {folder} is not in distribution mister!")
+            continue
+        
+        desc = dmdb['folders'][folder]
+        
+        if 'tags' not in desc:
+            print(f"Folder {folder} does not have a field 'tags'!")
+            continue
+        
+        tags = add_tags_to_dictionary(dmdb['tag_dictionary'], tag_dictionary, desc['tags'])
+
+        db['folders'][folder]['tags'] = tags
+        
+        for file in db['files']:
+            if file.startswith(folder):
+                db['files'][file]['tags'] = tags
+                
+    db['tag_dictionary'] = tag_dictionary
+    
+    neogeo_tags = db['folders']['|games/NEOGEO']['tags']
+    db['zips']['neogeo_unibios']['internal_summary']['files']['|games/NEOGEO/uni-bios.rom']['tags'] = neogeo_tags
+
+def add_tags_to_dictionary(from_dict, to_dict, tags):
+    selected_tag_numbers = set()
+
+    for tag in tags:
+        for tag_key, tag_number in from_dict.items():
+            if tag == tag_number:
+                selected_tag_numbers.add(tag_number)
+    
+    dict_by_number = reverse_dict(from_dict)
+    result_tag_numbers = set()
+    for tag_number in selected_tag_numbers:
+        first_tag_key = next(iter(dict_by_number[tag_number]))
+        if first_tag_key in to_dict:
+            result_tag_numbers.add(to_dict[first_tag_key])
+            continue
+
+        next_tag_number = len(to_dict)
+        result_tag_numbers.add(next_tag_number)
+        for tag_key in dict_by_number[tag_number]:
+            to_dict[tag_key] = next_tag_number
+            
+    return list(result_tag_numbers)
+
+def reverse_dict(from_dict):
+    result = {}
+    for k, v in from_dict.items():
+        if v not in result:
+            result[v] = set()
+        result[v].add(k)
+    return result
+
+def download(url):
+    temp_file = "/tmp/existing.json"
+    subprocess.run(['curl', '-L', '-o', temp_file, url], stderr=subprocess.STDOUT)
+    result = subprocess.run(['unzip', '-p', temp_file], stderr=subprocess.STDOUT, stdout=subprocess.PIPE)
+    return result.stdout.decode()
+    
+def get_distribution_mister_db():
+    print("Downloading dmdb")
+    string = download("https://raw.githubusercontent.com/MiSTer-devel/Distribution_MiSTer/main/db.json.zip")
+    print(string)
+    return json.loads(string)
 
 if __name__ == "__main__":
     main()
