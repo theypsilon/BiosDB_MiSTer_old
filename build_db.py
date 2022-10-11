@@ -89,7 +89,7 @@ def uni_bios_description():
 def add_tags_to_db(db):
     dmdb = get_distribution_mister_db()
     
-    tag_dictionary = {}
+    tag_dictionary = {"bios": 0}
     
     for folder in db['folders']:
         if folder not in dmdb['folders']:
@@ -108,12 +108,12 @@ def add_tags_to_db(db):
         
         for file in db['files']:
             if file.startswith(folder):
-                db['files'][file]['tags'] = tags
+                db['files'][file]['tags'] = [0, *tags]
                 
         for zip_desc in db['zips'].values():
             for file in zip_desc['internal_summary']['files']:
                 if file.startswith(folder):
-                    zip_desc['internal_summary']['files'][file]['tags'] = tags
+                    zip_desc['internal_summary']['files'][file]['tags'] = [0, *tags]
             for zipf in zip_desc['internal_summary']['folders']:
                 if zipf.startswith(folder):
                     zip_desc['internal_summary']['folders'][zipf]['tags'] = tags
