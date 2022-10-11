@@ -71,7 +71,7 @@ def main():
 
 def save_json(db, json_name):
     with open(json_name, 'w') as f:
-        json.dump(db, f, sort_keys=True)
+        json.dump(db, f, sort_keys=True, separators=(',', ':'))
     print('Saved ' + json_name)
 
 def load_json(path):
