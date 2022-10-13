@@ -35,7 +35,8 @@
             "file": "boot2.rom",
             "hash": "171fb7a5d3b808565295b45c773abaaf",
             "size": 8192
-        }
+        },
+        "zip": "CoCo3"
     },
     "CreatiVision": {
         "boot.rom": {
