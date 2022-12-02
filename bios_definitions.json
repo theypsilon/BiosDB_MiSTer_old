@@ -118,6 +118,13 @@
             "size": 131072
         }
     },
+    "MSX1": {
+        "boot.rom": {
+            "file": "vg8020_basic-bios1.rom",
+            "hash": "a0452dbf5ace7d2e49d0a8029efed09a",
+            "size": 32768
+        }
+    },
     "NEOGEO": {
         "000-lo.lo": {
             "file": "000-lo.lo",
